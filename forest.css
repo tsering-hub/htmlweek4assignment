@@ -100,31 +100,37 @@
 @media screen and (max-width:1013px) {
     #navbar .menu{
        display: block;
+       
     }
 
+    #medialink{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: #743535;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px grey;
+        justify-content: center;
+        width: 40%;
+        top: 50px;
+        margin-left: 47%;
+        padding: 10px;
+        overflow: hidden;
+        z-index: 1;   
+    }
 
     #navbar #medialink{
         display: none;
         
-
     }
 
     #navbar .menu:hover{
         color: black;
         background-color: #ffffff;
+        cursor: pointer;
     }
-    
-    #navbar #menu-wrapper:hover #medialink{
-        display: flex;
-        flex-direction: column;
-        background-color: #77a12d;
-        text-align: center;
-        padding: 5px;
-    
-    }
-        
+           
 }
-
 
 
 /* hover on button */
