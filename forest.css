@@ -99,6 +99,7 @@
 
 /* media query  */
 @media screen and (max-width:1013px) {
+
     #navbar .menu{
        display: block;
        
@@ -121,10 +122,6 @@
         z-index: 1;   
     }
 
-    /* #navbar #medialink{
-        display: none;
-        
-    } */
 
     #navbar .menu:hover{
         color: black;
@@ -641,17 +638,21 @@
 #form>form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     flex-direction: column;
    
 }
+#contactdetails{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
 .contactdetail{
     display: flex;
     flex-direction: row;
-   
     padding: 10px;
     line-height: 35px;
 }
+
 .contactdetail h1{
     color: #77a12d;
 }
@@ -664,13 +665,17 @@
 }
 
 #form{
-    width: 50%%;
+    width: 50%;
+    padding-right: 0px;
+    margin-right: 0px;
 }
-
+#form input,textarea,button{
+    width: 80%;
+    min-width: 200px;
+}
 
 #form input,textarea{
     padding: 20px;
-    width: 450px;
     margin: 10px;
     background-color: rgba(204, 204, 204, 0.39);
     border: none;
