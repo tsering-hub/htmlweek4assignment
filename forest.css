@@ -66,8 +66,8 @@
 #headerHeading button {
     margin: 30px 10px;
     border-radius: 25px;
-    width: 110px;
-    padding: 10px;
+    width: 90px;
+    padding: 8px;
     border: none;
     font-size: 15px;
     font-weight: bolder;
@@ -86,8 +86,8 @@
 #navbar .menu{
     display: none;
     border-radius: 25px;
-    width: 110px;
-    padding: 10px;
+    width: 90px;
+    padding: 10px 0px;
     border: none;
     font-size: 15px;
     font-weight: bolder;
@@ -633,13 +633,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 40px;
+    padding: 40px 5px;
+    
 }
 #form>form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-   
+    justify-content: center;
+  
 }
 #contactdetails{
     margin-left: 0px;
@@ -665,13 +667,11 @@
 }
 
 #form{
-    width: 50%;
     padding-right: 0px;
     margin-right: 0px;
 }
 #form input,textarea,button{
-    width: 80%;
-    min-width: 200px;
+    width: 100%;
 }
 
 #form input,textarea{
