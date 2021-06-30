@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="/forest.css">
     <script src="https://kit.fontawesome.com/b48f292892.js" crossorigin="anonymous"></script>
     <title>Forest</title>
-    <script>
-        function toggleRightMenu() {
-          navMenuStatus = document.getElementById('medialink').style.display;
-          if ( navMenuStatus == 'none' ) {
-            document.getElementById('medialink').style.display='flex';
-          } else {
-            document.getElementById('medialink').style.display = 'none';
-          }
-        }
-      </script>
+
 
 
 </head>
@@ -27,17 +18,30 @@
                    <li class="forest"><a href="/forest.html">Forest</a></li>
                 </ul>
                 <button class="menu" type="button" onclick="toggleRightMenu()">Menu</button>
-                <ul id="medialink">
-                    <li style="order: 6;"><a class="link" href="#Contact">Contact</a></li>
-                    <li style="order: 5;"><a class="link" href="#Team">Team</a></li>
-                    <li style="order: 4;"><a class="link" href="#Gallery">Gallery</a></li>
-                    <li style="order: 3;"><a class="link" href="#Service">Service</a></li>
-                    <li style="order: 2;"><a class="link" href="#Aboutus">About</a></li>
+                <ul id="medialink" class="medialink">
                     <li style="order: 1;"><a class="link" style="color: #a3c962;" href="/forest.html">Home</a></li>
+                    <li style="order: 2;"><a class="link" href="#Aboutus">About</a></li>
+                    <li style="order: 3;"><a class="link" href="#Service">Service</a></li>
+                    <li style="order: 4;"><a class="link" href="#Gallery">Gallery</a></li>
+                    <li style="order: 5;"><a class="link" href="#Team">Team</a></li>
+                    <li style="order: 6;"><a class="link" href="#Contact">Contact</a></li>
+                                        
                 </ul>
-            
-        
+                
         </div>
+
+        <script>
+            function toggleRightMenu() {
+              navMenuStatus = document.getElementById('medialink');
+              if ( navMenuStatus.className == "medialink" ) {
+                navMenuStatus.className += " show-menu-link";
+              } else {
+                navMenuStatus.className = "medialink";
+              }
+            }
+          </script>
+
+
         <div id="headerHeading">
             <h2>Global Warming</h3>
             <h1>Save Forest And Save Earth</h1>
